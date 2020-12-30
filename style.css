@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+.header_ref {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    color: white;
+}
+
+.header_ref_second {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    color: white;
+    margin-top: 250px;
+    flex-direction: column;
+}
+
+.header_ref-cover {
+    margin: auto;
+    margin-top: 115px;
+}
+
+.header_ref-title {
+    display: flex;
+    margin: auto;
+}
+
+.header_ref-button {
+    display: flex;
+    padding-left: 71px;
+    margin-top: 15px;
+}
+
+.ref_dot {
+    color: white;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+    display: flex;
+    border: 1px solid black;
+}
+
+.ref_image-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.picture_item1 {
+    display: flex;
+    width: 100%;
+}
+
+.picture_item2 {
+    display: flex;
+    width: 100%;
+}
+
+.ref_box {
+    width: calc(100%/4);
+    height: 444px;
+}
+
+img {
+    width: 100%;
+}
+
+.section_cover {
+    margin: auto;
+}
+
+.section_cover-header {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.section-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.special_dot {
+    display: flex;
+    margin-top: 20px;
+    margin-left: 11px;
+}
+
+.tieude_ref {
+    display: flex;
+}
+
+.ref_cover {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.pa_cover_one {
+    padding-right: 50px;
+}
+
+.phan1 {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    height: 100px;
+    width: 395px;
+}
+
+.phan2 {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    height: 100px;
+    width: 395px;
+}
+
+.tieude_ref {
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.ref_pa {
+    font-size: small;
+    color: #333;
+    font-family: sans-serif;
+    margin-top: 18px;
+}
+
+.separate {
+    padding-left: 13px;
+}
+
+.icon {
+    font-size: small;
+    color: #3c6fce;
+}
+
+.linebetween .icon {
+    margin-top: 8px;
+}
+
+.separate .icon {
+    margin-top: 8px;
+}
+
+.linebetween {
+    padding-left: 13px;
+}
+
+.doantext {
+    font-size: small;
+}
+
+h4 {
+    font-size: small;
+}
