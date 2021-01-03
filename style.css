@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.container {
+.ref_container {
     width: 100%;
 }
 
@@ -54,9 +54,11 @@
     border: 1px solid black;
 }
 
+.pa_cover_one {
+    margin-bottom: 50px;
+}
+
 .ref_image-row {
-    display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
 }
@@ -64,20 +66,18 @@
 .picture_item1 {
     display: flex;
     width: 100%;
-}
-
-.picture_item2 {
-    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-.ref_box {
-    width: calc(100%/4);
-    height: 444px;
+.ime {
+    width: calc(100%/1);
 }
 
 img {
     width: 100%;
+    height: 100%;
 }
 
 .section_cover {
@@ -105,30 +105,45 @@ img {
     display: flex;
 }
 
+
+/* man hinh 1028 */
+
 .ref_cover {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    margin-bottom: 150px;
+    margin-bottom: 150px; */
+    flex-direction: column;
 }
 
 .pa_cover_one {
     padding-right: 50px;
+    margin-left: 74px;
+}
+
+.two_cover {
+    padding-right: 50px;
+    margin-left: 74px;
 }
 
 .phan1 {
     border: 1px solid black;
     border-radius: 10px;
     display: flex;
-    height: 100px;
-    width: 395px;
+    height: 150px;
+    background: #FFFFFF;
+    /* position: relative; */
+    width: fit-content;
+    margin: auto;
 }
 
 .phan2 {
     border: 1px solid black;
     border-radius: 10px;
     display: flex;
-    height: 100px;
-    width: 395px;
+    height: 150px;
+    width: fit-content;
+    /* position: relative; */
+    margin: auto;
 }
 
 .tieude_ref {
@@ -145,6 +160,7 @@ img {
 
 .separate {
     padding-left: 13px;
+    position: relative;
 }
 
 .icon {
@@ -162,6 +178,7 @@ img {
 
 .linebetween {
     padding-left: 13px;
+    position: relative;
 }
 
 .doantext {
@@ -171,3 +188,109 @@ img {
 h4 {
     font-size: small;
 }
+
+.triangle1,
+.square {
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid black;
+    transform: rotate(-180deg);
+    top: 100%;
+    right: 75%;
+    position: absolute;
+}
+
+
+/* TABLET  */
+
+@media(min-width: 768px) {
+    .ref_container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .ime {
+        width: calc(100%/2);
+    }
+}
+
+
+/* TABLET BU VA LAPTOP */
+
+@media(min-width: 992px) {
+    .container {
+        width: 100%;
+        flex-direction: row;
+    }
+    .ime {
+        width: calc(100%/3);
+    }
+    .ref_cover {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+}
+
+
+/* LATOP */
+
+@media(min-width: 1028px) {
+    .container {
+        width: 100%;
+    }
+    .ime {
+        width: calc(100%/4);
+    }
+    .ref_cover {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+    }
+}
+
+
+/* 1280 */
+
+@media(min-width: 1280px) {
+    .container {
+        width: 100%;
+    }
+    .ime {
+        width: calc(100%/4);
+    }
+    .ref_cover {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+
+/* .phan1:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 245%;
+    right: 70%;
+    width: 19px;
+    height: 19px;
+    background: #FFFFFF;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.phan2:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 245%;
+    right: 37%;
+    width: 19px;
+    height: 19px;
+    background: #FFFFFF;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(45deg);
+} */
